@@ -1086,7 +1086,6 @@ vendor/lib/libOmxWmaDec.so|d92612bf69c037b86c0f3acbcac1b9976f1bee3f
 vendor/lib/libvqzip.so|224d6ed62e52b470d9821b99e59c0857609870a5
 
 # Perf
-vendor/bin/energy-awareness
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
 vendor/bin/msm_irqbalance
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
