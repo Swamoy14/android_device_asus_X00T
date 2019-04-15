@@ -17,6 +17,9 @@
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong
+    
+# APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
