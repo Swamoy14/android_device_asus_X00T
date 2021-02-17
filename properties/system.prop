@@ -35,6 +35,7 @@ persist.sys.fflag.override.settings_provider_model=false
 ro.vendor.qti.sensors.dev_ori=true
 ro.vendor.qti.sensors.pmd=true
 ro.vendor.qti.sensors.sta_detect=true
+ro.vendor.qti.sensors.smd=false
 ro.vendor.qti.sensors.mot_detect=true
 
 # Surface Flinger
