@@ -36,6 +36,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import androidx.preference.PreferenceManager;
+
 import com.asus.zenparts.GestureNodeControl;
 import com.asus.zenparts.R;
 import com.asus.zenparts.utils.ActionConstants;
@@ -93,8 +95,7 @@ public class ScreenOffGesture extends PreferenceFragment implements
 
         mPicker = new ShortcutPickerHelper(mActivity, this);
 
-        mScreenOffGestureSharedPreferences = mContext.getSharedPreferences(
-                GESTURE_SETTINGS, Activity.MODE_PRIVATE);
+        mScreenOffGestureSharedPreferences = PreferenceManager.getDefaultSharedPreferences(mContext);
 
         /* Build array with list of entries and values
          * to show in gesture action selection dialog
