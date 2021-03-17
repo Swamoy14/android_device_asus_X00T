@@ -113,8 +113,8 @@ void vendor_load_properties()
 
    // Safetynet Workaround
     property_override("ro.boot.verifiedbootstate", "green");
-    property_override("ro.build.description", "walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys");
-    property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
-    property_override("ro.system.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+    property_override("ro.build.description", "redfin-user 11 RQ2A.210305.007 7124944 release-keys");
+    property_override("ro.build.fingerprint", "google/redfin/redfin:11/RQ2A.210305.007/7124944:user/release-keys");
+    property_override("ro.system.build.fingerprint", "google/redfin/redfin:11/RQ2A.210305.007/7124944:user/release-keys");
 
 }

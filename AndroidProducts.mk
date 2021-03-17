@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The aospOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_X00T.mk
+    $(LOCAL_DIR)/aosp_X00T.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_X00T-user \
-    lineage_X00T-userdebug \
-    lineage_X00T-eng
+    aosp_X00T-user \
+    aosp_X00T-userdebug \
+    aosp_X00T-eng
