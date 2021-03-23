@@ -88,6 +88,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service
 
+# Perf (dependencies)
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.asus_sdm660

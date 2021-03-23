@@ -130,6 +130,7 @@ vendor.vidc.enc.disable_bframes=1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+vendor.power.pasr.enabled=true
 
 # Radio
 persist.dbg.volte_avail_ovr=1
