@@ -23,8 +23,8 @@ endif
 ifeq ($(TARGET_USES_INTERACTION_BOOST),true)
     LOCAL_CFLAGS += -DINTERACTION_BOOST
 endif
-LOCAL_MODULE := android.hardware.power-service
-LOCAL_INIT_RC := android.hardware.power-service.rc
+LOCAL_MODULE := android.hardware.power-service.asus_sdm660
+LOCAL_INIT_RC := android.hardware.power-service.asus_sdm660.rc
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -Wno-unused-parameter -Wno-unused-variable
 LOCAL_VENDOR_MODULE := true
