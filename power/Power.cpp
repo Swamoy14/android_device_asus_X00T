@@ -62,7 +62,6 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
     switch(type){
         case Mode::DOUBLE_TAP_TO_WAKE:
         case Mode::LOW_POWER:
-        case Mode::LAUNCH:
         case Mode::EXPENSIVE_RENDERING:
         case Mode::DEVICE_IDLE:
         case Mode::DISPLAY_INACTIVE:
@@ -73,6 +72,9 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
         case Mode::CAMERA_STREAMING_HIGH:
         case Mode::VR:
             LOG(INFO) << "Mode " << static_cast<int32_t>(type) << "Not Supported";
+            break;
+        case Mode::LAUNCH:
+            power_hint(POWER_HINT_LAUNCH, enabled ? &enabled : NULL);
             break;
         case Mode::INTERACTIVE:
             setInteractive(enabled);
@@ -93,6 +95,7 @@ ndk::ScopedAStatus Power::isModeSupported(Mode type, bool* _aidl_return) {
     LOG(INFO) << "Power isModeSupported: " << static_cast<int32_t>(type);
 
     switch(type){
+        case Mode::LAUNCH:
         case Mode::INTERACTIVE:
         case Mode::SUSTAINED_PERFORMANCE:
         case Mode::FIXED_PERFORMANCE:
