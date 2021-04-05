@@ -617,6 +617,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- QCC HAL Service -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.qccvndhal</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IQccvndhal</name>
+            <instance>qccvndhal</instance>
+        </interface>
+    </hal>
     <!-- target-level="3" manifest entries here -->
     <hal format="hidl">
         <name>android.hardware.light</name>
@@ -683,3 +693,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <version>30.0</version>
     </sepolicy>
 </manifest>
+

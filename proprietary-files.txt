@@ -784,6 +784,11 @@ vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|43b4fa65e294070acf46d1733e9
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|878f819218e155fec02125f81715d2321b3ca64e
 vendor/lib64/vendor.qti.latency@2.0.so|ab1775138a2bf0587cd6cc990a432e0ad7dc2379
 
+# Connection Security - from LA.UM.9.12.r1-10800-SMxx50.0
+vendor/bin/ssgqmigd|5769f2aef8fdf48f55b01e3d7d3d1aecb860d7e1
+vendor/bin/ssgtzd|f2f473c1ecf4323bd206ea90c948c7d34ce287de
+vendor/etc/init/ssgtzd.rc|be60402995a8b6dcec3a726b83e7ae2de52017a6
+
 # Data - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/ATFWD-daemon|548c3793b864c2e7b3fbe1db6ae12e84877974b2
 vendor/bin/adpl|cf8d2e3fec8a90bf6fb0cc4dc2995159ad721ccd
@@ -1206,6 +1211,13 @@ vendor/bin/pm-proxy|0bf9d5f920ee8e62f517d29534812b5592c4dd5e
 vendor/bin/pm-service|233111a0c4f74bb4f702567ed59569c8469a8775
 vendor/lib64/libperipheral_client.so|fb69b2c6db96dd82ed228e786a687b04a692fd46
 
+# QCC VND HAL - from LA.UM.9.12.r1-10800-SMxx50.0
+vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service|7fc59359c94e5977cb549e4f9d56062bb9ecbc84
+vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc|afeb332a4750a11587658fcc9a75a27f63bbccdd
+vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so|760fe89c7d1faf5bfd3907c3cdfe830de85e8ba3
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so|db925aebfbee9403124547a26bab1f1e13f4fdb5
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so|a776faac4fee084176b3c1f6f677521f04b8040c
+
 # QCRIL - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/hw/qcrild|ad8316e9f0f42e67f9ee9d4bcc7943c5bc9a0087
 vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
@@ -1263,6 +1275,14 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql|fcb2cba3bfd71
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|0fdf4b6ccb48906b37885e060429f79c9fd6bdbf
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
 vendor/radio/qcril_database/qcril.db|7e9a9f2d58190f3b753cb5a2a857518c596ba9e2
+
+# QCC-TR-UI - from LA.UM.9.12.r1-10800-SMxx50.0
+-vendor/app/QCC-TR-UI/QCC-TR-UI.apk;PRESIGNED|dd6f103910138d6e76044c1a3989dceeff0a4ddc
+vendor/bin/qcc-trd|46672f8a314bbe4b51d641d20c77059624dba584
+
+# QDMA - from LA.UM.9.12.r1-10800-SMxx50.0
+vendor/etc/init/init.qdmastats.rc|837b16bf9600715345fc65d5d6c98ce97f2d4583
+vendor/lib64/libqdma_file_agent.so|c6483769a70c046e858a6d56faacc36309eb0bb0
 
 # QMI - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/irsc_util|b3af449662e515f83c02d874a21a2a6cc9c9c7dc
@@ -1582,6 +1602,13 @@ system_ext/lib64/vendor.qti.latency@2.0.so
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -system/framework/tcmclient.jar
 
+# SMC Invoke - from LA.UM.9.12.r1-10800-SMxx50.0
+vendor/etc/ssg/ta_config.json|e18554b038da3737b7352d1271e5fde9c789c9df
+vendor/etc/ssg/tz_whitelist.json|c0dc4f4cfee20db5993eb5142e362cba7dfaecd6
+vendor/lib64/libminkdescriptor.so|6f8f11ee5cbfa618eed75d317adf734550a51182
+vendor/lib64/libnative-api.so|09c8712984bb02dbf43c536e7835a7307b5115e8
+vendor/lib64/libqcbor.so|c7db76dc44c7f492791aa27a18a0a5035f21b062
+
 # TFTP - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/tftp_server|f096a58e024ef6d1ad78da49388c183747d384da
 vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb
@@ -1667,3 +1694,4 @@ vendor/lib/libwfdmmservice.so|ccdf23feee6f25493297cab321003a2b11177027
 vendor/lib/libwfdmodulehdcpsession.so|6e87f31c53f5c8cfcbbf27d5f5df1154ff6f6e96
 vendor/lib64/libmmosal.so|ef19a38be8283c87eabe96f74bc8a71881ab1f0a
 vendor/lib64/libwfdhdcpcp.so|1a3384745b7ec87cda5ff58a43872b1374f6fc9b
+
