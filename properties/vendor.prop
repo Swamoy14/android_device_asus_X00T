@@ -187,3 +187,6 @@ persist.vendor.usb.config=diag,serial_cdev,rmnet,adb
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
