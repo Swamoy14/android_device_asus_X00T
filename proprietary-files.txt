@@ -1086,7 +1086,7 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|c7267852e7539ec85cce18ee04d7cffa97e7027f
 
 # Listen - from LA.UM.9.6.2.r1-04100-89xx.0
-vendor/lib/hw/sound_trigger.primary.msm8937.so:vendor/lib/hw/sound_trigger.primary.sdm660.so|a63363296a361e1230592bcf8f8268101cea434b
+vendor/lib/hw/sound_trigger.primary.msm8937.so:vendor/lib/hw/sound_trigger.primary.sdm660.so|c906ffb16c5f82536516b10b9987a58df7081e56
 vendor/lib/libadpcmdec.so|7a38d6b28b27cf663681ad077614a03164418f91
 vendor/lib/libgcs-calwrapper.so|4d876cef46407c46ab80b74872ad615bcb2e45df
 vendor/lib/libgcs-ipc.so|b093c43e7882db3e8c772e76422e3f07168b490b
