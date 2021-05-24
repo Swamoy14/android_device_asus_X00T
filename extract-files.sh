@@ -65,7 +65,7 @@ function blob_fixup() {
     case "${1}" in
 
     # Load vndk 29 libprotobuf
-    vendor/lib64/libwvhidl.so | vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
+    vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
         "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
         ;;
 
