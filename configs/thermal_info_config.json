@@ -151,7 +151,7 @@
             "Multiplier":0.001
         },
         {
-            "Name":"quiet_therm",
+            "Name":"quiet-therm-adc",
             "Type":"SKIN",
             "HotThreshold":[
                 "NAN",
