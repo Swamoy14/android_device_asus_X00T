@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.pixel
+    android.hardware.thermal@2.0-service.mock
 
 # USB
 PRODUCT_PACKAGES += \
