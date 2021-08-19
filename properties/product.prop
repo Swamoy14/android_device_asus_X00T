@@ -11,5 +11,5 @@ ro.sf.blurs_are_expensive=1
 ro.config.low_ram=false
 ro.lmk.log_stats=true
 
-# IORap
-iorapd.readahead.enable=true
+# IORAP
+ro.iorapd.enable=true
