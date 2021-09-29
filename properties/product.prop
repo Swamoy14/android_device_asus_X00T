@@ -7,9 +7,5 @@ ro.surface_flinger.supports_background_blur=1
 persist.sys.sf.disable_blurs=1
 ro.sf.blurs_are_expensive=1
 
-# LMKD
-ro.config.low_ram=false
-ro.lmk.log_stats=true
-
 # IORAP
 ro.iorapd.enable=true
