@@ -659,7 +659,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <sepolicy>
-        <version>30.0</version>
+        <version>31.0</version>
     </sepolicy>
 </manifest>
 
