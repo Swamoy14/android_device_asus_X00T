@@ -23,6 +23,9 @@ ro.netflix.bsp_rev=Q660-13149-1
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
+# Recovery
+persist.sys.binary_xml=false
+
 # Radio
 DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
