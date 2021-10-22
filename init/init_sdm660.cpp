@@ -113,8 +113,8 @@ void vendor_load_properties()
 
    // Safetynet Workaround
     property_override("ro.boot.verifiedbootstate", "green");
-    property_override("ro.build.description", "redfin-user 11 RQ3A.211001.001 7641976 release-keys");
-    property_override("ro.build.fingerprint", "google/redfin/redfin:11/RQ3A.211001.001/7641976:user/release-keys");
-    property_override("ro.system.build.fingerprint", "google/redfin/redfin:11/RQ3A.211001.001/7641976:user/release-keys");
+    property_override("ro.build.description", "raven-userdebug 12 SD1A.210817.015.A4 7697517 dev-keys");
+    property_override("ro.build.fingerprint", "google/raven/raven:12/SD1A.210817.015.A4/7697517:userdebug/dev-keys");
+    property_override("ro.system.build.fingerprint", "google/raven/raven:12/SD1A.210817.015.A4/7697517:userdebug/dev-keys");
 
 }
