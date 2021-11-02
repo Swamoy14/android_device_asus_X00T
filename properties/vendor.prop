@@ -112,6 +112,7 @@ debug.sf.hw=1
 debug.sf.recomputecrop=0
 persist.hwc.mdpcomp.enable=true
 vendor.display.disable_rotator_downscale=1
+vendor.display.disable_scaler=0
 
 # FM
 vendor.hw.fm.init=0
