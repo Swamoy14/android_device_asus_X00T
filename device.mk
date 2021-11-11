@@ -14,6 +14,21 @@
 # limitations under the License.
 #
 
+# Android Go Configurations (Beneficial for everyone, even on non-Go devices)
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+DONT_DEXPREOPT_PREBUILTS := true
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+USE_DEX2OAT_DEBUG := false
+WITH_DEXPREOPT_DEBUG_INFO := false
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUI
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong
@@ -152,10 +167,6 @@ PRODUCT_PACKAGES += \
 	qti_telephony_hidl_wrapper.xml \
 	qti-telephony-utils \
 	qti_telephony_utils.xml
-	
-# Inherit several Android Go Configurations (Beneficial for everyone, even on non-Go devices)
-PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
 # IORAP
 PRODUCT_PACKAGES += \
@@ -344,21 +355,6 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 # Sqlite
 PRODUCT_PACKAGES += \
     sqlite3
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Settings \
-    SystemUI
-
-# Always preopt extracted APKs to prevent extracting out of the APK
-# for gms modules.
-PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-USE_DEX2OAT_DEBUG := false
-WITH_DEXPREOPT_DEBUG_INFO := false
-
-# Speed profile services and wifi-service to reduce RAM and storage
-PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Telephony
 PRODUCT_PACKAGES += \
