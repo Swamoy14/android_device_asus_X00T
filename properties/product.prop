@@ -2,6 +2,9 @@
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
 
+# Blur
+ro.surface_flinger.supports_background_blur=0
+
 # IORap
 ro.iorapd.enable=true
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
