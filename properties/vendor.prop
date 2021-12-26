@@ -131,6 +131,9 @@ ro.lmk.log_stats = true
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Printk
+persist.vendor.console.silent.config=1
+
 # Radio
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
