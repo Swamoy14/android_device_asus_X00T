@@ -585,11 +585,6 @@
          Used to decide if the user can change the colors -->
     <bool name="config_multiColorBatteryLed">false</bool>
 
-    <!-- SQLite -->
-    <string name="db_default_journal_mode">MEMORY</string>
-    <string name="db_default_sync_mode">OFF</string>
-    <string name="db_wal_sync_mode">OFF</string>
-
     <!-- Controls the navigation bar interaction mode:
          0: 3 button mode (back, home, overview buttons)
          1: 2 button mode (back, home buttons + swipe up for overview)
