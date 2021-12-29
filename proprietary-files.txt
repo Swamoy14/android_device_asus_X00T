@@ -723,6 +723,8 @@ vendor/lib/libmmcamera_ppeiscore.so|986c8e050e75bdc3fe5ee442efb94baa83d1813c
 
 # Carrier Settings - from bonito - SP1A.211105.002
 -product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED
+etc/permissions/privapp-permissions-google-carriersettings.xml
+etc/sysconfig/google-hiddenapi-package-whitelist-carriersettings.xml
 product/etc/CarrierSettings/ahamo_jp.pb
 product/etc/CarrierSettings/airtel_in.pb
 product/etc/CarrierSettings/apt_tw.pb
