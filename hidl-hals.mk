@@ -122,9 +122,8 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
-# RenderScript HAL
+# PowerStats HAL
 PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl \
     android.hardware.power.stats@1.0-service.mock
 
 # RIL
