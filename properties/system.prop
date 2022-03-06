@@ -2,7 +2,7 @@
 vendor.bluetooth.soc=cherokee
 
 # Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam
+vendor.camera.aux.packagelist=com.google.android.apps.cameralite
 
 # CNE
 persist.vendor.cne.feature=1
