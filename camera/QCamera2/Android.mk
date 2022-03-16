@@ -7,6 +7,9 @@ include $(CLEAR_VARS)
 SDCLANG_COMMON_DEFS := $(LOCAL_PATH)/sdllvm-common-defs.mk
 SDCLANG_FLAG_DEFS := $(LOCAL_PATH)/sdllvm-flag-defs.mk
 
+LOCAL_COPY_HEADERS_TO := qcom/camera
+LOCAL_COPY_HEADERS := QCameraFormat.h
+
 ifneq ($(call is-platform-sdk-version-at-least,28),true)
 IS_QC_BOKEH_SUPPORTED := true
 else
@@ -42,7 +45,11 @@ LOCAL_SRC_FILES += \
         HAL3/QCamera3CropRegionMapper.cpp \
         HAL3/QCamera3StreamMem.cpp
 
+ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) >= 31 ))" )))
 LOCAL_CFLAGS := -Wall -Wextra -Werror -Wno-compound-token-split-by-macro
+else
+LOCAL_CFLAGS := -Wall -Wextra -Werror
+endif
 LOCAL_CFLAGS += -DFDLEAK_FLAG
 LOCAL_CFLAGS += -DMEMLEAK_FLAG
 #HAL 1.0 source
@@ -114,12 +121,13 @@ LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/../mm-image-codec/qexif \
         $(LOCAL_PATH)/../mm-image-codec/qomx_core \
         $(LOCAL_PATH)/include \
+        $(LOCAL_PATH)/stack/common \
         $(LOCAL_PATH)/stack/common/leak \
         $(LOCAL_PATH)/stack/mm-camera-interface/inc \
         $(LOCAL_PATH)/util \
         $(LOCAL_PATH)/HAL3 \
-        $(call project-path-for,qcom-media)/libstagefrighthw \
-        $(call project-path-for,qcom-media)/mm-core/inc \
+        hardware/qcom/media/libstagefrighthw \
+        hardware/qcom/media/mm-core/inc \
         $(TARGET_OUT_HEADERS)/mm-camera-lib/cp/prebuilt
 
 ifneq (,$(filter $(TRINKET),$(TARGET_BOARD_PLATFORM)))
@@ -137,8 +145,7 @@ ifneq ($(TARGET_KERNEL_VERSION),$(filter $(TARGET_KERNEL_VERSION),3.18 4.4 4.9))
   endif
 endif
 
-LOCAL_HEADER_LIBRARIES := camera_common_headers
-LOCAL_HEADER_LIBRARIES += media_plugin_headers
+LOCAL_HEADER_LIBRARIES := media_plugin_headers
 LOCAL_HEADER_LIBRARIES += libandroid_sensor_headers
 LOCAL_HEADER_LIBRARIES += libcutils_headers
 LOCAL_HEADER_LIBRARIES += libsystem_headers
@@ -146,7 +153,7 @@ LOCAL_HEADER_LIBRARIES += libhardware_headers
 
 #HAL 1.0 Include paths
 LOCAL_C_INCLUDES += \
-        $(DEVICE_PATH)/camera/QCamera2/HAL
+        hardware/qcom/camera/QCamera2/HAL
 
 ifeq ($(TARGET_COMPILE_WITH_MSM_KERNEL),true)
 LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
@@ -174,7 +181,7 @@ LOCAL_CFLAGS += -DUSE_CAMERA_METABUFFER_UTILS
 LOCAL_C_INCLUDES += \
         $(TARGET_OUT_HEADERS)/qcom/display
 LOCAL_C_INCLUDES += \
-        $(call project-path-for,qcom-display)/libqservice
+        hardware/qcom/display/libqservice
 LOCAL_SHARED_LIBRARIES := liblog libhardware libutils libcutils libdl libsync
 LOCAL_SHARED_LIBRARIES += libmmcamera_interface libmmjpeg_interface libui libcamera_metadata
 LOCAL_SHARED_LIBRARIES += libqdMetaData libqservice libbinder
@@ -188,7 +195,7 @@ LOCAL_SHARED_LIBRARIES += libdualcameraddm
 LOCAL_CFLAGS += -DENABLE_QC_BOKEH
 endif
 ifeq ($(USE_DISPLAY_SERVICE),true)
-LOCAL_SHARED_LIBRARIES += android.frameworks.displayservice@1.0 libhidltransport libhidlbase
+LOCAL_SHARED_LIBRARIES += android.frameworks.displayservice@1.0 android.hidl.base@1.0 libhidlbase
   ifneq ($(filter P% p% Q% q%,$(TARGET_PLATFORM_VERSION)),)
     LOCAL_SHARED_LIBRARIES += libhidltransport
   endif
@@ -207,9 +214,17 @@ LOCAL_CFLAGS += -DSUPPORT_ONLY_HAL3
 endif
 
 ifneq (,$(filter $(strip $(TARGET_KERNEL_VERSION)),4.14 4.19))
-    ifeq ($(TARGET_BOARD_PLATFORM), sdm660)
+    ifneq (,$(filter sdm660 msm8937 msm8953, $(TARGET_BOARD_PLATFORM)))
         LOCAL_CFLAGS += -DSUPPORT_ONLY_HAL3
     endif
+endif
+
+ifneq (,$(filter $(strip $(TARGET_KERNEL_VERSION)),4.14 4.19))
+ifneq (,$(filter $(TRINKET) sdm660 msm8937 msm8953, $(TARGET_BOARD_PLATFORM)))
+ifeq (,$(filter P% p% Q% q% ,$(TARGET_PLATFORM_VERSION)))
+LOCAL_CFLAGS += -DSUPPORT_POWER_HINT_XML
+endif
+endif
 endif
 
 LOCAL_STATIC_LIBRARIES := android.hardware.camera.common@1.0-helper
@@ -222,11 +237,6 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_32_BIT_ONLY := $(BOARD_QTI_CAMERA_32BIT_ONLY)
 include $(BUILD_SHARED_LIBRARY)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := camera_common_headers
-LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/stack/common
-include $(BUILD_HEADER_LIBRARY)
 
 include $(call first-makefiles-under,$(LOCAL_PATH))
 endif

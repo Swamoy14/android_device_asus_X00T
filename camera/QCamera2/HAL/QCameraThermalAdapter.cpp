@@ -67,12 +67,6 @@ QCameraThermalAdapter::QCameraThermalAdapter() :
 
 int QCameraThermalAdapter::init(QCameraThermalCallback *thermalCb)
 {
-    int rc = UNKNOWN_ERROR;
-    LOGE("Skip loading libthermalclient \n");
-    (void)thermalCb;
-    goto error;
-
-#if 0
     const char *error = NULL;
     int rc = NO_ERROR;
 
@@ -156,7 +150,6 @@ error2:
     mCameraHandle = 0;
     dlclose(mHandle);
     mHandle = NULL;
-#endif
 error:
     LOGD("X");
     return rc;
