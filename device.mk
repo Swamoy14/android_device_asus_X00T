@@ -16,8 +16,7 @@
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService-Soong \
-    com.dsi.ant.antradio_library
+    AntHalService-Soong
 
 # Audio
 PRODUCT_PACKAGES += \
