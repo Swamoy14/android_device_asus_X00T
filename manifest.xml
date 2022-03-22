@@ -660,7 +660,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <fqname>@1.0::IUsb/default</fqname>
     </hal>
     <sepolicy>
-        <version>31.0</version>
+        <version>32.0</version>
     </sepolicy>
 </manifest>
 
