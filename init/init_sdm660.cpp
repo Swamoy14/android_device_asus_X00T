@@ -113,8 +113,8 @@ void vendor_load_properties()
 
    // Safetynet Workaround
     property_override("ro.boot.verifiedbootstate", "green");
-    property_override("ro.build.description", "raven-user 12 SP2A.220305.013.A3 8229987 release-keys");
-    property_override("ro.build.fingerprint", "google/raven/raven:12/SP2A.220305.013.A3/8229987:user/release-keys");
-    property_override("ro.system.build.fingerprint", "google/raven/raven:12/SP2A.220305.013.A3/8229987:user/release-keys");
+    property_override("ro.build.description", "raven-user 12 SP2A.220405.004 8233519 release-keys");
+    property_override("ro.build.fingerprint", "google/raven/raven:12/SP2A.220405.004/8233519:user/release-keys");
+    property_override("ro.system.build.fingerprint", "google/raven/raven:12/SP2A.220405.004/8233519:user/release-keys");
 
 }
