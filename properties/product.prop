@@ -1,3 +1,6 @@
+# Always use GPU for screen compositing
+debug.sf.disable_hwc_overlays=1
+
 # Audio
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
