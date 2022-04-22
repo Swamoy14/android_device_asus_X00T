@@ -8,3 +8,6 @@ ro.surface_flinger.supports_background_blur=0
 # IORap
 ro.iorapd.enable=true
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
