@@ -559,6 +559,7 @@
     <!-- The list of components which should be automatically disabled for a specific device. -->
      <string-array name="config_disabledComponents" translatable="false">
      <item>com.google.android.googlequicksearchbox/com.google.android.hotword.service.HotwordService</item>
+     <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
      </string-array>
      
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
