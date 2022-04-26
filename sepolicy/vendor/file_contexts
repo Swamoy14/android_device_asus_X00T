@@ -27,9 +27,6 @@
 # Persist
 /persist(/.*)?                                                                                  u:object_r:mnt_vendor_file:s0
 
-# Powerstats mock
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock               u:object_r:hal_power_stats_default_exec:s0
-
 # Sensors
 /sys/devices/virtual/input/input[0-9]+/stk3x1x-proximity(/.*)?                                  u:object_r:sysfs_sensors:s0
 /sys/devices/virtual/input/input[0-9]+/stk3x1x-light(/.*)?                                      u:object_r:sysfs_sensors:s0
