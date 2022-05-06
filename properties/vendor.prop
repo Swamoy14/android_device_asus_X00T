@@ -114,6 +114,10 @@ vidc.enc.dcvs.extra-buff-count=2
 # Charger
 ro.charger.enable_suspend=true
 
+# Codec2
+debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank=0
+
 # Display
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
