@@ -139,13 +139,6 @@ ro.com.google.rlzbrandcode=ASUP
 ro.config.low_ram = false
 ro.lmk.log_stats = true
 
-# Media
-debug.stagefright.omx_default_rank=0
-vendor.vidc.dec.enable.downscalar=0
-vendor.vidc.enc.disable.pq=true
-vendor.vidc.enc.disable.pq=true
-vendor.vidc.enc.disable_bframes=1
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 

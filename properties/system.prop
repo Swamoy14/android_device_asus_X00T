@@ -19,6 +19,10 @@ vendor.display.disable_skip_validate=1
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.thumbnail.prefer_hw_codecs=true
+vidc.enc.target_support_bframe=1
+vendor.vidc.enc.disable_bframes=1
+vendor.vidc.dec.enable.downscalar=1
+vendor.vidc.enc.disable.pq=true
 
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
