@@ -772,7 +772,7 @@ else
 
         # Enable adaptive LMK for all targets &
         # use Google default LMK series for all 64-bit targets >=2GB.
-        echo 1 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
+        echo 0 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
 
         # Enable oom_reaper
         if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
@@ -798,7 +798,7 @@ else
               *)
                 #Set PPR parameters for all other targets.
                 echo $set_almk_ppr_adj > /sys/module/process_reclaim/parameters/min_score_adj
-                echo 1 > /sys/module/process_reclaim/parameters/enable_process_reclaim
+                echo 0 > /sys/module/process_reclaim/parameters/enable_process_reclaim
                 echo 50 > /sys/module/process_reclaim/parameters/pressure_min
                 echo 70 > /sys/module/process_reclaim/parameters/pressure_max
                 echo 30 > /sys/module/process_reclaim/parameters/swap_opt_eff
@@ -2791,12 +2791,6 @@ case "$target" in
             # Set Memory parameters
             configure_memory_parameters
 
-            # enable LPM
-            echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
-
-            # Start cdsprpcd only for sdm660 and disable for sdm630
-            start vendor.cdsprpcd
-
             # Start Host based Touch processing
                 case "$hw_platform" in
                         "MTP" | "Surf" | "RCM" | "QRD" )
@@ -2805,7 +2799,8 @@ case "$target" in
                 esac
             ;;
         esac
-        #Apply settings for sdm630 and Tahaa
+
+        # Apply settings for sdm630 and Tahaa
         case "$soc_id" in
             "318" | "327" | "385" )
 
@@ -2911,8 +2906,6 @@ case "$target" in
             echo N > /sys/module/lpm_levels/system/pwr/cpu7/ret/idle_enabled
             echo N > /sys/module/lpm_levels/system/pwr/pwr-l2-dynret/idle_enabled
             echo N > /sys/module/lpm_levels/system/perf/perf-l2-dynret/idle_enabled
-            # enable LPM
-            echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
 
             # re-enable thermal and BCL hotplug
             echo 1 > /sys/module/msm_thermal/core_control/enabled
@@ -5759,18 +5752,6 @@ if [ -f /sys/devices/soc0/select_image ]; then
     echo $image_variant > /sys/devices/soc0/image_variant
     echo $oem_version > /sys/devices/soc0/image_crm_version
 fi
-
-# Change console log level as per console config property
-console_config=`getprop persist.vendor.console.silent.config`
-case "$console_config" in
-    "1")
-        echo "Enable console config to $console_config"
-        echo 0 > /proc/sys/kernel/printk
-        ;;
-    *)
-        echo "Enable console config to $console_config"
-        ;;
-esac
 
 # Parse misc partition path and set property
 misc_link=$(ls -l /dev/block/bootdevice/by-name/misc)
