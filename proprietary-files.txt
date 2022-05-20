@@ -49,11 +49,11 @@ vendor/lib/libadm.so|2fd429c8066572cc49262fe0d452c78706197d54
 vendor/lib/libaudcal.so|5361c538d20634221c317851c33b0842ced93fca
 vendor/lib/libqtigef.so|977cbb704f6b2bae7f4e2f17b8c15146a6cacffb
 
-# Audio-FX - from S62Pro RKQ1.210406.002
+# Audio-FX - from UL-ASUS_X00T-WW-16.2017.2009.087-user
 vendor/lib/soundfx/libasphere.so|90940fca6f4b84794046513c6c6868eca9470066
-vendor/lib/soundfx/libqcbassboost.so|8e92c5d40cd23f503840b055d71336e4c9daecc0
-vendor/lib/soundfx/libqcreverb.so|7e05f1f4bdd2947dac3aefd871437d289581078b
-vendor/lib/soundfx/libqcvirt.so|03a8b95eb77811e3861307ab1451f4144bba2572
+vendor/lib/soundfx/libqcbassboost.so|9327128a592d24def9a6e323c9a85541a2052c1a
+vendor/lib/soundfx/libqcreverb.so|bf57090dbba900b6a3325513b4b6d4bdc6eaf2cd
+vendor/lib/soundfx/libqcvirt.so|050274cac0a518494d0bc12d288722a50670ed95
 
 # Audio-ACDB
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
