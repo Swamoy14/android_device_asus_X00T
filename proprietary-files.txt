@@ -75,7 +75,6 @@ vendor/lib64/libbt-hidlclient.so|fd202ec3a2bf6d35d4c41330ab0dd34f97f1af0e
 vendor/lib64/libbtnv.so|97a565f4ad7678525fe112e30e51bf754d02c5fa
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|3f81d703a5d1b635170b01f12b185b2215992df7
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|fff9d4896b3cfea0ca857788cedaac268da4778d
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|c0b04169a439717f8a9ba2e03a2d775dba8272c9
 
 # Bluetooth-Audio - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|7b858110fc095441bdec79215adabb03000dabce
@@ -710,9 +709,6 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
-# Camera-sensors - from LA.UM.9.6.2.r1-04100-89xx.0
-vendor/lib/libmmcamera_ppeiscore.so|986c8e050e75bdc3fe5ee442efb94baa83d1813c
-
 # Carrier Settings - from redfin - SP2A.220305.012
 -product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED|a78767d03a94e60fa4731f49802111d2b3f1c0ec
 product/etc/permissions/privapp-permissions-google-carriersettings.xml|9456e3591ab387c1c16c942e43e799fc1124d0a1
@@ -981,29 +977,29 @@ vendor/lib64/libSecureUILib.so|b98555b76083a897fc9bbfc27778750d2d47817a
 vendor/lib64/libssd.so|774488b88c37053067b3cad551ac95360c03edd3
 vendor/lib64/libStDrvInt.so|6091f1f496b87730f9a77e9ede504c4fa99c608a
 
-# DRM-Qteeconnector - from LA.UM.9.6.2.r1-04100-89xx.0
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|f8dc88c7166ffc2c1d997e7d5f16a8eb69c37cfc
+# DRM-Qteeconnector - from S62Pro RKQ1.210406.002
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|a12cd8a3d326609ee0f0a0cdb5cfc69bd2085f1e
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|b938db8f4135d056a998a4dbd07860b2778d9948
-vendor/lib/libQTEEConnector_vendor.so|8cf24406730b9433f7b93c5af2cbd820bde0716f
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|1ca5f602c9e36fddfa9c2d671e4b96d1b2bdaeb3
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|ccc51a52996f2f0bf9581f28d1bf00f12af8c5bc
-vendor/lib64/libQTEEConnector_vendor.so|62d8993f51e0d4a0c4d6ae2645512ddfc76577f3
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|8c7e2bebeeb0a45737b1c38b193b8e01beb9d6ae
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|3d0c9fbc3845248d8264d1875e476c23b41f2790
+vendor/lib/libQTEEConnector_vendor.so|16a10203eea17821f87e5e078300b8ecbe29deb3
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|98fbae4add3d6edc096aed3634831a50328491e5
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|00b11c69484701f95d1f9e1021a66326b5c66e97
+vendor/lib64/libQTEEConnector_vendor.so|bf3050ea3ef5435f0289092681f07a2fe834958b
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|4e08dcd830d319c1a56d108c037b1f76eb5060d4
 
-# DRM-Widevine - from phoenix_sprout - RKQ1.201123.002
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine|7c65a818f9c3d00051698e2a51425058083d69c4
+# DRM-Widevine - from S62Pro RKQ1.210406.002
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|2158f47423c723a9da29bb81bb16987a1e715c21
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
-vendor/lib64/libcpion.so|0a6999ca33dea3bed4301106fc225f9b11b9f289
-vendor/lib64/libwvhidl.so|6a391723bb40d8d7ee09012fe9c31f0122e4a84f
+vendor/lib64/libcpion.so|80d7e010395b3ead01b70435584dfa11afbb52bf
+vendor/lib64/libwvhidl.so|acf4870a0b10af74a40a4c6180f2c10a1706ddbd
 
 # DRM-Widevine-oemcrypto
 vendor/lib64/liboemcrypto.so
 
-# DRM-Widevine-HDCP - from phoenix_sprout - RKQ1.201123.002
-vendor/lib64/libhdcpsrm.so|affdc2195766c34226510dd422fbf22f689b25b2
-vendor/lib64/libmm-hdcpmgr.so|99cf7e11c8e08ddb92deb8fbd514cf874bedaf63
+# DRM-Widevine-HDCP - from S62Pro RKQ1.210406.002
+vendor/lib64/libhdcpsrm.so|1cb91cbaad3c0a44df4f244f8fb462a9f0ebb0b2
+vendor/lib64/libmm-hdcpmgr.so|eb7db96305875b80971fec7b93ea800b6c9a1a77
 
 # DSP-basic - from S62Pro RKQ1.210406.002
 vendor/bin/dspservice|a8eb76af6150bbf29c12b76b00ab469b99f563f7
@@ -1012,12 +1008,15 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5f
 vendor/lib/vendor.qti.hardware.dsp@1.0.so|f902e821229cd1fff50ebfba99b0a068cbf74a56
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|223a9268bd92bd80dab3df02fbef38ea86bcbadd
 
-# ESE-Powermanager - from LA.UM.9.12.r1-10800-SMxx50.0
-vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|ae3e15534b0c8abd22f8a5e52a491df8c46bd0c2
+# EIS - from S62Pro RKQ1.210406.002
+vendor/lib/libmmcamera_ppeiscore.so|9dd4681844ab1b4f49436f8e7918a465a304eb08
+
+# ESE - from S62Pro RKQ1.210406.002
+vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|040212c2c39ca3f2090291dd3a7f49979e5003df
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|3c024c7135ec3dd8658624509ee61396a74f1ede
-vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|17f648402c874e4f981caadd91438a525089e35d
-vendor/lib64/vendor.qti.esepowermanager@1.0.so|48b202753701401c03d386dae7a00bef4aff153e
-vendor/lib64/vendor.qti.esepowermanager@1.1.so|0d8e2aee61fbbfb345870ca965458babbef9912f
+vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|7b67b47030f00af1c2e207995eea05f05fb91b23
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|6585b5976a98053fb4d2b51c32337ebe8960d427
+vendor/lib64/vendor.qti.esepowermanager@1.1.so|61d7c35edb403f8de4be2e483431cb26109ef0ae
 
 # Fingerprint
 -vendor/app/QFingerprintService/QFingerprintService.apk
@@ -1040,13 +1039,12 @@ vendor/firmware/novatek_ts_fw_dj.bin|fd3d12c6abd1a77766ab1d1a0a60ce4256001614
 vendor/firmware/novatek_ts_fw_txd.bin|3841353c8f050a81178f9a5667b1e7cd5bdcc514
 vendor/firmware/startup_fw_update.img|24ce9ee6defe4dc2861f27c1087fc13a44212b9d
 
-# FM - from LA.UM.9.12.r1-10800-SMxx50.0
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|b3778cb15a7e852660a4e4e4e23889a6317affdb
-
-# FM - from LA.QSSI.11.0.r1-08800-qssi.0
-system_ext/lib64/fm_helium.so|68702cf4304128663a1578150a1ed8063d93ca73
-system_ext/lib64/libfm-hci.so|0da384e2fd4809bb39a36fb25d3c6c0325cea0c3
-system_ext/lib64/vendor.qti.hardware.fm@1.0.so|b7dd1354a1415cf49b96b6bb0cc44920c41d2aab
+# FM - from S62Pro RKQ1.210406.002
+system_ext/lib64/fm_helium.so|b2440e4feaae8a7f5e2269525520f9774b6962fc
+system_ext/lib64/libfm-hci.so|758c6e7cfafc964b5cd9d71806ec5455e0d78716
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so|5eaf6d5d67361ff6236c1ec4f5225c6185a904a6
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|05931b5d088bd7000b0b002ee650b0953e272cd7
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|f6e23f902b7e15232b20af55161a24da93ffe25f
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -1427,13 +1425,13 @@ vendor/lib64/libqsocket.so|25416e1927102940818827713fbfa8ca36f084c0
 vendor/lib64/libsmemlog.so|1c435a561a53d47e805d47dc114e1202702db05e
 vendor/lib64/libsystem_health_mon.so|09f3fb5c23a8e19045bc2d8a94103399ef609837
 
-# QSEEcom Hal - from LA.UM.9.6.2.r1-04100-89xx.0
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|9bbbb98699438abb8da802c04b03f9a426e6140c
+# QSEEcom Hal - from S62Pro RKQ1.210406.002
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|d3d6ed383483747f8bec574adcac1c24ef1ac3a4
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
-vendor/lib/vendor.qti.hardware.qseecom@1.0.so|bdb5c822a6e4b8a550e8269ed7cce41ffce98c6c
-vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so|e29628919fae208784fb28450726abc94d080452
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|679c0f228e2f408e9c46c01f5cb44544d3c5452d
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|ce93054507fdda761073a1cb8c7ac2b1e9f59669
+vendor/lib/vendor.qti.hardware.qseecom@1.0.so|11517c93d45920f8e2f67e3696574b6099711142
+vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so|6b3246eaacad1ef332e3deb1c980265ddf263a57
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|1b4c92c07ed5ba3f053e10a11f2bc1232ad45375
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|c76c8b6856cd1800fd170c85f38474ce4d2ac095
 
 # RemoteFS - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/rmt_storage|e451381c339376c1e40b3e6899a8e9a76af5c054
