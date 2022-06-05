@@ -858,8 +858,8 @@ product/etc/CarrierSettings/vodafone_tr.pb|58283dbcf910c9e8b82e82a2c2ef388ec5446
 product/etc/CarrierSettings/windtre_it.pb|1809dad2545a7e8bb6223f25dcf3a7a9ac6fb46f
 product/etc/CarrierSettings/xfinity_us.pb|f6dbc5402d83585d098d9db10f5b7fbff6fe51c0
 
-# Charger
-vendor/bin/hvdcp_opti
+# Charger - from S62Pro RKQ1.210406.002
+vendor/bin/hvdcp_opti|0af1d3a59fd10acd7a614662c341421d9267014c
 
 # CNE - from LA.UM.9.12.r1-10800-SMxx50.0
 -vendor/app/CACertService/CACertService.apk;PRESIGNED|b08fa7c9d2faba99547db99df908909dfc0c8e90
@@ -1737,5 +1737,5 @@ vendor/firmware/widevine.b06
 vendor/firmware/widevine.b07
 vendor/firmware/widevine.mdt
 
-# WiFi
-vendor/bin/cnss-daemon
+# WiFi - from S62Pro RKQ1.210406.002
+vendor/bin/cnss-daemon|3137d9a479fe6e363896fe77248bcb488fae2c2e
