@@ -15,12 +15,14 @@ persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
 # Display
-debug.sf.latch_unsignaled=0
-persist.demo.hdmirotationlock=false
-sdm.debug.disable_skip_validate=1
 vendor.display.enable_default_color_mode=1
 vendor.gralloc.enable_fb_ubwc=1
 vendor.display.disable_skip_validate=1
+
+# Graphics
+debug.sf.latch_unsignaled=1
+persist.demo.hdmirotationlock=false
+sdm.debug.disable_skip_validate=1
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
@@ -67,9 +69,6 @@ ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.set_display_power_timer_ms=10000
 ro.surface_flinger.set_touch_timer_ms=5000
 ro.surface_flinger.set_idle_timer_ms=9000
-
-# VSync
-debug.cpurend.vsync=false
 
 # WiFi Display
 persist.debug.wfd.enable=1
