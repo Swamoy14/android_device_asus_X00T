@@ -86,6 +86,9 @@
     <string name="config_comboNetworkLocationProvider">com.qualcomm.location</string>
     <string name="config_networkLocationProviderPackageName">com.qualcomm.location</string>
 
+    <!-- Boolean indicating whether or not wifi firmware debugging is enabled -->
+    <bool translatable="false" name="config_wifi_enable_wifi_firmware_debugging">false</bool>
+
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.
          Here are a few of them:
