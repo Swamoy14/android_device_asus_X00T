@@ -22,6 +22,7 @@ vendor.display.use_smooth_motion=1
 
 # Graphics
 debug.sf.latch_unsignaled=1
+dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 sdm.debug.disable_skip_validate=1
 
