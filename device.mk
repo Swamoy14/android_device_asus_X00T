@@ -41,18 +41,18 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
-    libfmq \
+    libaudioroute \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libvolumelistener \
-    tinymix
+    libvolumelistener
 
 # Audio-Extensions
 PRODUCT_PACKAGES += \
     libhdmiedid \
     libhfp \
     libsndmonitor \
+    libspkrprot \
     libssrec
 
 PRODUCT_COPY_FILES += \
