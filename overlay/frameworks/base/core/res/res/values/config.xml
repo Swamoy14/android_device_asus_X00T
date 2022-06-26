@@ -611,4 +611,7 @@
     <!-- Flag indicating whether notification and ringtone volumes
          are controlled together (aliasing is true) or not. -->
     <bool name="config_alias_ring_notif_stream_types">false</bool>
+    
+    <!-- If this is true, the screen will fade off. -->
+    <bool name="config_animateScreenLights">false</bool>
 </resources>
