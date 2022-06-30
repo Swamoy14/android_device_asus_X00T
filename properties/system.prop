@@ -47,6 +47,9 @@ ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_provider_model=false
 
+# RCS
+persist.rcs.supported=1
+
 # Recovery
 persist.sys.binary_xml=false
 
