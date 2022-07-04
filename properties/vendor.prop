@@ -138,6 +138,7 @@ ro.com.google.rlzbrandcode=ASUP
 
 # Graphics
 debug.cpurend.vsync=false
+debug.renderengine.backend=threaded
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
