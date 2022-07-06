@@ -20,6 +20,10 @@ vendor.gralloc.enable_fb_ubwc=1
 vendor.display.disable_skip_validate=1
 vendor.display.use_smooth_motion=1
 
+# Fingerprint
+persist.sys.fingerauto=1
+persist.sys.iscdfinger_998eas=1
+
 # Graphics
 debug.sf.latch_unsignaled=1
 dev.pm.dyn_samplingrate=1
