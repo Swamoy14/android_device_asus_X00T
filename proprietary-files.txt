@@ -717,7 +717,7 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
-# CarrierSettings - from redfin - SQ3A.220605.009.A1
+# CarrierSettings - from redfin - SQ3A.220705.003.A1
 -product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED|359193ffe3610eabfbd81cbf50767d600c859b57
 product/etc/permissions/privapp-permissions-google-carriersettings.xml|9456e3591ab387c1c16c942e43e799fc1124d0a1
 product/etc/sysconfig/google-hiddenapi-package-whitelist-carriersettings.xml|e6db8b760a8c80e971560b3a70706b2f7a47cc4c
@@ -782,6 +782,7 @@ product/etc/CarrierSettings/kpn_nl.pb|348709281e2ebcd70b9d9ae5fce8f72e9a31e44b
 product/etc/CarrierSettings/liberty_pr.pb|487cf451f90819ff8b7c166729c161c37daa25aa
 product/etc/CarrierSettings/linemo_jp.pb|e8a4d17ab69bf85e14edbe3ad7e026b90d201e10
 product/etc/CarrierSettings/luckymobile_ca.pb|6d28cd7f3ae2bcd476e3c69c52703ea461c8c613
+product/etc/CarrierSettings/m1_sg.pb|afc26aa3c9a277ebaca12087f4b1e948de67a87d
 product/etc/CarrierSettings/metropcs_us.pb|74bcd976007f1a4da1ba733555cc5ed9a9da685e
 product/etc/CarrierSettings/movistar_es.pb|6acc394114dd47704dda565031d3bfb53aad1dc0
 product/etc/CarrierSettings/o2_de.pb|c8b053645174765a70d8a0c571e236a4c2573fd7
@@ -849,6 +850,7 @@ product/etc/CarrierSettings/virgin_ca.pb|59d73043cd92e70764f5d9aa56ef8e325055d05
 product/etc/CarrierSettings/virgin_gb.pb|4c6f7c85cc49fa6d2b93a9fec5192f90ea8a6bfd
 product/etc/CarrierSettings/virgin_us.pb|cb374713dfbc5f293a65feafa240109b2d6c848e
 product/etc/CarrierSettings/visible_us.pb|21c76abf368017c8e1e4c715411bc74d550809ae
+product/etc/CarrierSettings/visiblev_us.pb|7661f81daa9d0a5db3b9fa6b51fb948200dcf876
 product/etc/CarrierSettings/vodafone_au.pb|b7c4dd3dd57d0a930ff3ea9cf9f92ed368897e4e
 product/etc/CarrierSettings/vodafone_cz.pb|e32d2feffe676ce209000e0cf6d5145c82edd0f3
 product/etc/CarrierSettings/vodafone_de.pb|542da886cad0d210e05261a09cd3a0aaffdfa21f
@@ -1305,7 +1307,7 @@ vendor/lib64/libqti-util.so
 
 # Perf-Configs - from LA.UM.10.2.1.r1-03400-sdm660.0
 vendor/etc/perf/commonresourceconfigs.xml|1e5fd2e4612b61371cda4114c9091430f6d5fb1c
-vendor/etc/perf/perfconfigstore.xml|7aed790478c9796246ea7c4b3bb6f7d31172ecb3
+vendor/etc/perf/perfconfigstore.xml|5cb4e2b761127722a412745c11ed1ddf8590f0de
 vendor/etc/perf/targetresourceconfigs.xml|50eb2e60eb50a1d27b476c7aeb98ecb612df7eee
 vendor/etc/perf/perfboostsconfig.xml|1b925efc5be95c1fbcec228a609ffa59b1f6ecc9
 vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
