@@ -207,6 +207,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
 # Media
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
@@ -242,8 +246,6 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libavservices_minijail.vendor \
     libc2dcolorconvert \
     libmm-omxcore \
     libOmxAacEnc \
@@ -252,6 +254,7 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
+    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
