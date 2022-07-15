@@ -89,7 +89,7 @@ $(call inherit-product, vendor/asus/X00T/X00T-vendor.mk)
 PRODUCT_PACKAGES += \
     camera.sdm660 \
     libgui_vendor \
-    GCamGOPrebuilt
+    CameraGO
     
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
