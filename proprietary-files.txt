@@ -1120,10 +1120,6 @@ vendor/firmware/a512_zap.mdt
 vendor/firmware/a530_pfp.fw
 vendor/firmware/a530_pm4.fw
 
-# Graphics (Dependency) - from S62Pro RKQ1.210406.002
-vendor/lib/libtinyxml.so|16853d57ef82d59b48506857fc80b149ba3b3543
-vendor/lib64/libtinyxml.so|da9f11e9edc92bb6d5e8f64f4fbbaf8019b8587a
-
 # Graphics (HDCP) - from S62Pro RKQ1.210406.002
 vendor/lib/libmm-hdcpmgr.so|02cc65f79a951f9006ebc05b0edec2c5a296a684
 vendor/lib64/libmm-hdcpmgr.so|eb7db96305875b80971fec7b93ea800b6c9a1a77
