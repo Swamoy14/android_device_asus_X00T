@@ -1571,7 +1571,6 @@ system_ext/etc/spn-conf.xml|ac8a0750445f66091e7e77928fc055ff50369f42
 -system_ext/framework/dpmapi.jar|2e2fbe2257a697b96a644c774136da0554430d3f
 -system_ext/framework/embmslibrary.jar|b5fe26c1cea597af8a1751332d187f2f574816c1
 -system_ext/framework/qcrilhook.jar|f2888f922b8347417dfa86741feb8348795fce6f
--system_ext/framework/qti-telephony-common.jar|1fd37129f961e58f9d1189736e2cb46290666b97
 -system_ext/framework/remotesimlockmanagerlibrary.jar|964306688a3062d0ec507e471d2f4a1a1911e765
 -system_ext/framework/uimgbalibrary.jar|60a64011ce419cd980aaa58bfe131b79ff616b69
 -system_ext/framework/uimgbamanagerlibrary.jar|881baefa00e98f7d25ed33b7ec69e1f0eb821039
