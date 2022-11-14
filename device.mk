@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
     
 # APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+PRODUCT_COMPRESSED_APEX := false
 
 # Audio
 PRODUCT_PACKAGES += \
