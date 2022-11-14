@@ -49,6 +49,7 @@ LOCAL_CFLAGS := -Wall -Wextra -Werror
 endif
 LOCAL_CFLAGS += -DFDLEAK_FLAG
 LOCAL_CFLAGS += -DMEMLEAK_FLAG
+
 #HAL 1.0 source
 
 ifeq ($(TARGET_SUPPORT_HAL1),false)
@@ -89,6 +90,8 @@ ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) <= 23 ))" )))
 LOCAL_CFLAGS += -DUSE_HAL_3_3
 endif
 endif
+
+LOCAL_CFLAGS += -Wno-unused-variable -Wno-unused-parameter -DVANILLA_HAL
 
 #use media extension
 ifeq ($(TARGET_USES_MEDIA_EXTENSIONS), true)
@@ -150,7 +153,7 @@ LOCAL_HEADER_LIBRARIES += libhardware_headers
 
 #HAL 1.0 Include paths
 LOCAL_C_INCLUDES += \
-        $(DEVICE_PATH)/camera/QCamera2/HAL
+        $(COMMON_PATH)/camera/QCamera2/HAL
 
 ifeq ($(TARGET_COMPILE_WITH_MSM_KERNEL),true)
 LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
