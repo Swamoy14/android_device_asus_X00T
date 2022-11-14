@@ -69,7 +69,7 @@ void vendor_load_properties()
     
    // Safetynet Workaround
     property_override("ro.boot.verifiedbootstate", "green");
-    property_override("ro.build.description", "raven-user 13 TP1A.220905.004 8927612 release-keys");
-    property_override("ro.build.fingerprint", "google/raven/raven:13/TP1A.220905.004/8927612:user/release-keys");
-    property_override("ro.system.build.fingerprint", "google/raven/raven:13/TP1A.220905.004/8927612:user/release-keys");
+    property_override("ro.build.description", "cheetah-user 13 TD1A.221105.001 9104446 release-keys");
+    property_override("ro.build.fingerprint", "google/cheetah/cheetah:13/TD1A.221105.001/9104446:user/release-keys");
+    property_override("ro.system.build.fingerprint", "google/cheetah/cheetah:13/TD1A.221105.001/9104446:user/release-keys");
 }
