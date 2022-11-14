@@ -86,7 +86,7 @@ TARGET_SCREEN_DENSITY := 480
 TARGET_DISPLAY_USE_SMOOTH_MOTION := true
 
 # DT2W
-TARGET_TAP_TO_WAKE_NODE := "/sys/kernel/touchpanel/dclicknode"
+TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
