@@ -108,7 +108,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
+    android.hardware.power-service.asus_sdm660 \
     vendor.qti.hardware.perf@2.0.vendor
 
 #Secure element
