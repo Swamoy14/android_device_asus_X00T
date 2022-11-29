@@ -1,10 +1,12 @@
-/*
- * Copyright (c) 2012-2013,2015-2017, The Linux Foundation. All rights reserved.
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+/* Copyright (c) 2016-2018,2020-2021. The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
  * met:
- * *    * Redistributions of source code must retain the above copyright
+ *     * Redistributions of source code must retain the above copyright
  *       notice, this list of conditions and the following disclaimer.
  *     * Redistributions in binary form must reproduce the above
  *       copyright notice, this list of conditions and the following
@@ -26,22 +28,20 @@
  * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
-#include <cutils/properties.h>
-
-int sysfs_read(char *path, char *s, int num_bytes);
-int sysfs_write(char *path, char *s);
-int get_scaling_governor(char governor[], int size);
-int get_scaling_governor_check_cores(char governor[], int size,int core_num);
-int is_interactive_governor(char*);
-
-void vote_ondemand_io_busy_off();
-void unvote_ondemand_io_busy_off();
-void vote_ondemand_sdf_low();
-void unvote_ondemand_sdf_low();
-void perform_hint_action(int hint_id, int resource_values[],
-    int num_resources);
-void undo_hint_action(int hint_id);
-void release_request(int lock_handle);
-int interaction_with_handle(int lock_handle, int duration, int num_args, int opt_list[]);
-int perf_hint_enable(int hint_id, int duration);
+-->
+<HintConfigs>
+    <Powerhint>
+     <!-- camera 30fps and camera preview -->
+     <!--sample_ms = 10mS -->
+     <!--SLB for Core0 = -6 -->
+     <!--SLB for Core1 = -6 -->
+     <!--SLB for Core2 = -6 -->
+     <!--SLB for Core3 = -6 -->
+     <!--hispeed load = 95 -->
+     <!--hispeed freq = 1401 -->
+     <Config
+            Id="0x00001331" Enable="true" Timeout="0" Target="sdm660"
+            Resources="0x41820000, 0xa, 0x40c68100, 0xfffffffa, 0x40c68110, 0xfffffffa, 0x40c68120, 0xfffffffa,
+            0x40c68130, 0xfffffffa, 0x41440100, 0x5f, 0x4143c100, 0x579"/>
+    </Powerhint>
+</HintConfigs>
