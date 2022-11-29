@@ -24,6 +24,10 @@ vendor.display.use_smooth_motion=1
 persist.sys.fingerauto=1
 persist.sys.iscdfinger_998eas=1
 
+# GPS
+persist.backup.ntpServer="0.pool.ntp.org"
+persist.vendor.overlay.izat.optin=rro
+
 # Graphics
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
