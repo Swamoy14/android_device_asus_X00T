@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!--
-/* Copyright (c) 2016-2018,2020. The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016-2018,2020-2021. The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -31,64 +31,17 @@
 -->
 <HintConfigs>
     <Powerhint>
-
-        <!-- camera 30fps and camera preview -->
-        <!--L CPU CORE 0 SCHED LOAD BOOST -->
-        <!--L CPU CORE 1 SCHED LOAD BOOST -->
-        <!--L CPU CORE 2 SCHED LOAD BOOST -->
-        <!--L CPU CORE 3 SCHED LOAD BOOST -->
-        <!--L CPU CORE 4 SCHED LOAD BOOST -->
-        <!--L CPU CORE 5 SCHED LOAD BOOST -->
-        <!--L CPU Hispeed freq of 1017Mhz -->
-        <!--L CPU - Set hispeed load 95 -->
-        <!--BWMON - Set sample_ms 20 -->
-        <Config
+     <!-- camera 30fps and camera preview -->
+     <!--sample_ms = 10mS -->
+     <!--SLB for Core0 = -6 -->
+     <!--SLB for Core1 = -6 -->
+     <!--SLB for Core2 = -6 -->
+     <!--SLB for Core3 = -6 -->
+     <!--hispeed load = 95 -->
+     <!--hispeed freq = 1401 -->
+     <Config
             Id="0x00001331" Enable="true" Timeout="0" Target="sdm660"
-            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
-            0x40C68130, 0xFFFFFFFA, 0x40C68040, 0xFFFFFFFA, 0x40C68050, 0xFFFFFFFA,
-            0x4143C100, 0x3F9, 0x41440100, 0x5F, 0x43034000, 0x14"/>
-
-        <!-- camera 60 FPS -->
-        <!--L CPU CORE 0 SCHED LOAD BOOST -->
-        <!--L CPU CORE 1 SCHED LOAD BOOST -->
-        <!--L CPU CORE 2 SCHED LOAD BOOST -->
-        <!--L CPU CORE 3 SCHED LOAD BOOST -->
-        <!--L CPU CORE 4 SCHED LOAD BOOST -->
-        <!--L CPU CORE 5 SCHED LOAD BOOST -->
-        <!--BWMON - Set sample_ms 20 -->
-        <Config
-            Id="0x00001332" Enable="true" Timeout="0" Target="sdm660"
-            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
-            0x40C68130, 0xFFFFFFFA, 0x40C68040, 0xFFFFFFFA, 0x40C68050, 0xFFFFFFFA,
-            0x43034000, 0x14"/>
-
-        <!-- camera HFR -->
-        <!--L CPU CORE 0 SCHED LOAD BOOST -->
-        <!--L CPU CORE 1 SCHED LOAD BOOST -->
-        <!--L CPU CORE 2 SCHED LOAD BOOST -->
-        <!--L CPU CORE 3 SCHED LOAD BOOST -->
-        <!--L CPU CORE 4 SCHED LOAD BOOST -->
-        <!--L CPU CORE 5 SCHED LOAD BOOST -->
-        <!--BWMON - Set sample_ms 20 -->
-        <Config
-            Id="0x00001333" Enable="true" Timeout="0" Target="sdm660"
-            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
-            0x40C68130, 0xFFFFFFFA, 0x40C68040, 0xFFFFFFFA, 0x40C68050, 0xFFFFFFFA,
-            0x43034000, 0x14"/>
-
-        <!-- Dual camera -->
-        <!--L CPU CORE 0 SCHED LOAD BOOST -->
-        <!--L CPU CORE 1 SCHED LOAD BOOST -->
-        <!--L CPU CORE 2 SCHED LOAD BOOST -->
-        <!--L CPU CORE 3 SCHED LOAD BOOST -->
-        <!--L CPU CORE 4 SCHED LOAD BOOST -->
-        <!--L CPU CORE 5 SCHED LOAD BOOST -->
-        <!--BWMON - Set sample_ms 20 -->
-        <Config
-            Id="0x00001334" Enable="true" Timeout="0" Target="sdm660"
-            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
-            0x40C68130, 0xFFFFFFFA, 0x40C68040, 0xFFFFFFFA, 0x40C68050, 0xFFFFFFFA,
-            0x43034000, 0x14"/>
-
+            Resources="0x41820000, 0xa, 0x40c68100, 0xfffffffa, 0x40c68110, 0xfffffffa, 0x40c68120, 0xfffffffa,
+            0x40c68130, 0xfffffffa, 0x41440100, 0x5f, 0x4143c100, 0x579"/>
     </Powerhint>
 </HintConfigs>
