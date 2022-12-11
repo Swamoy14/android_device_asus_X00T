@@ -464,4 +464,7 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
      user root
      group system wakelock
 
-
+# Restrict permissions to socket file
+# to hide Magisk & co.
+on property:sys.boot_completed=1
+    chmod 440 /proc/net/unix
