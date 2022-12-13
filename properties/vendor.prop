@@ -31,6 +31,7 @@ vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 vendor.audio.tunnel.encode=false
 vendor.voice.path.for.pcm.voip=false
+vendor.audio.gsl.shmem.dmaheap.uncached=true
 
 # Audio feature
 vendor.audio.feature.a2dp_offload.enable=false
