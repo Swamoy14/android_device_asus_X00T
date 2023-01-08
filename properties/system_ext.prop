@@ -22,3 +22,4 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 # Telephony
 ro.telephony.sim_slots.count=2
 telephony.active_modems.max_count=2
+ro.telephony.block_binder_thread_on_incoming_calls=false
