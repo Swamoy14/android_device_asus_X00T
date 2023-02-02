@@ -28,6 +28,11 @@ vendor.display.use_smooth_motion=1
 persist.sys.fingerauto=1
 persist.sys.iscdfinger_998eas=1
 
+# GMS
+ro.com.google.clientidbase.ms=android-asus-tpin
+ro.com.google.rlzbrandcode=ASUP
+ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7,y9
+
 # GPS
 persist.backup.ntpServer="0.pool.ntp.org"
 persist.vendor.overlay.izat.optin=rro
