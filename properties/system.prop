@@ -27,10 +27,14 @@ vendor.display.enable_default_color_mode=1
 vendor.gralloc.enable_fb_ubwc=1
 vendor.display.disable_skip_validate=1
 vendor.display.use_smooth_motion=1
+persist.hwc.mdpcomp.enable=true
 
 # Fingerprint
 persist.sys.fingerauto=1
 persist.sys.iscdfinger_998eas=1
+
+# FM
+vendor.hw.fm.init=0
 
 # GMS
 ro.com.google.clientidbase.ms=android-asus-tpin
@@ -45,6 +49,9 @@ persist.vendor.overlay.izat.optin=rro
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 sdm.debug.disable_skip_validate=1
+
+# IMS
+persist.dbg.ims_volte_enable=1
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
