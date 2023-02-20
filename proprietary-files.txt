@@ -717,8 +717,8 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
-# CarrierSettings - from redfin TQ1A.221205.011
--product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED|73a11b8621f86e3c62b57d92d409467ba931ec3b
+# CarrierSettings - from redfin TQ1A.230205.002
+-product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED|c964935074889eb88d03a48ad163e066a425968a
 product/etc/permissions/privapp-permissions-google-carriersettings.xml|9456e3591ab387c1c16c942e43e799fc1124d0a1
 product/etc/sysconfig/google-hiddenapi-package-whitelist-carriersettings.xml|e6db8b760a8c80e971560b3a70706b2f7a47cc4c
 product/etc/CarrierSettings/a1_at.pb|a16145f8d790ceca9b19e9c24986372ef66c4f1d
@@ -773,9 +773,9 @@ product/etc/CarrierSettings/gamma_gb.pb|2926ede2df0df0e6adf24b67b1f89521c56db680
 product/etc/CarrierSettings/giga_sg.pb|8ffb85fd04e548717ee37c7d184995ac56a61202
 product/etc/CarrierSettings/h3_at.pb|cbe558bd4aeab8802227904c7d7dbe5a2953fa8d
 product/etc/CarrierSettings/h3_gb.pb|9496c2aa4ca532069ea782ed88a6d61f3f9105cc
-product/etc/CarrierSettings/h3_ie.pb|c3756c9c505f8a4592c726305eb001fb8c56adfe
+product/etc/CarrierSettings/h3_ie.pb|bd4add91de270ff866ef017620fdf1ca26a49682
 product/etc/CarrierSettings/h3_se.pb|b2a2eec45d6b72763a81934c20f5c9ab2038299f
-product/etc/CarrierSettings/h3g27202_ie.pb|a99da3d87d56e7567f3965a685e2c5d445e34587
+product/etc/CarrierSettings/h3g27202_ie.pb|17346d7c2897f8137b78c96a4db2f2c5add2f5fc
 product/etc/CarrierSettings/halebop_se.pb|d901134cb9499662e642a6d9da42fab97f74daab
 product/etc/CarrierSettings/homobile_it.pb|13ab78ccef44ec3d63500e1efd70fdcb1a87c6f8
 product/etc/CarrierSettings/ice_no.pb|5c97078c153c624e16b60c0004191f1e32eb3911
