@@ -537,6 +537,9 @@
     <!-- Specify if the fingerprint hardware support gestures-->
      <bool name="config_fingerprintSupportsGestures">true</bool>
      
+     <!-- Whether the new Auto Selection Network UI should be shown -->
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
+     
     <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
     <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
     
