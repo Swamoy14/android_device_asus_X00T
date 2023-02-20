@@ -4,6 +4,7 @@ vendor.bluetooth.soc=cherokee
 # Camera
 vendor.camera.aux.packagelist=com.google.android.apps.cameralite
 persist.camera.privapp.list=com.google.android.apps.cameralite
+persist.vendor.camera.privapp.list=com.google.android.apps.cameralite
 vendor.camera.aux.packagelist=com.google.android.apps.cameralite
 
 # CNE
