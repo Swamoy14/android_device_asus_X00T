@@ -534,8 +534,8 @@
      <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
      <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 
-    <!-- Specify if the fingerprint hardware support gestures-->
-     <bool name="config_fingerprintSupportsGestures">true</bool>
+    <!-- Whether device supports gestures on fingerprint sensor -->
+    <bool name="config_supportsGesturesOnFingerprintSensor">false</bool>
      
      <!-- Whether the new Auto Selection Network UI should be shown -->
     <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
