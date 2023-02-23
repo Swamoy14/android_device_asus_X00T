@@ -38,14 +38,13 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0 \
-    android.frameworks.displayservice@1.0.vendor \
+    android.hardware.camera.device@3.5 \
     android.hardware.camera.common@1.0 \
-    android.hardware.camera.device@3.4 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5 \
-    vendor.qti.hardware.camera.device@1.0
+    vendor.qti.hardware.camera.device@1.0 \
+    android.frameworks.sensorservice@1.0.vendor
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -54,6 +53,8 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     vendor.display.config@2.0 \
+    android.frameworks.displayservice@1.0 \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
