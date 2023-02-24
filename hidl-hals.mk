@@ -114,6 +114,11 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service
+    
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2 \
+    vendor.qti.hardware.perf@2.2.vendor
 
 # Power
 PRODUCT_PACKAGES += \
@@ -122,7 +127,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.qti \
     android.hardware.power.stats@1.0-service
 
-#Secure element
+# Secure element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2 \
     android.hardware.secure_element@1.2.vendor
