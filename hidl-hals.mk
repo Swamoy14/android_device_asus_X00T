@@ -20,8 +20,8 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio.service \
     android.hardware.audio@6.0-impl \
-    android.hardware.audio@2.0-service \
     android.hardware.audio.effect@6.0-impl
 
 # Bluetooth
@@ -97,10 +97,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service
-    
-# Media
-PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl
 
 # Net
 PRODUCT_PACKAGES += \
