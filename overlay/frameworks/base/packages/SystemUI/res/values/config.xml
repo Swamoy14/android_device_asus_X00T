@@ -32,4 +32,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- FPSInfoService Fps file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
     
+    <!-- Unlock ripple animation -->
+    <bool name="config_enableUnlockRippleAnimation">false</bool>
+    
 </resources>
