@@ -225,6 +225,11 @@ PRODUCT_PACKAGES += \
     NfcNci \
     SecureElement \
     Tag
+    
+# NGA
+PRODUCT_PACKAGES += \
+    NgaResources \
+    nga
 
 # NVRAM
 PRODUCT_PACKAGES += \
