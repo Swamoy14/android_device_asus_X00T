@@ -125,6 +125,9 @@ vendor.fm.a2dp.conc.disabled=false
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # Graphics
 debug.cpurend.vsync=false
 ro.hardware.egl=adreno
