@@ -124,7 +124,6 @@ on boot
     mkdir /data/vendor/camera 0770 camera camera
 
 #Load WLAN driver
-   insmod /vendor/lib/modules/wlan.ko
    chown wifi wifi /sys/module/wlan/parameters/fwpath
 
 #USB controller configuration
