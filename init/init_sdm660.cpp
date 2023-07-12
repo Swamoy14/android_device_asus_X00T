@@ -69,7 +69,7 @@ void vendor_load_properties()
     
    // Safetynet Workaround
     property_override("ro.boot.verifiedbootstate", "green");
-    property_override("ro.build.description", "cheetah-user 13 TQ2A.230505.002 9891397 release-keys");
-    property_override("ro.build.fingerprint", "google/cheetah/cheetah:13/TQ2A.230505.002/9891397:user/release-keys");
-    property_override("ro.system.build.fingerprint", "google/cheetah/cheetah:13/TQ2A.230505.002/9891397:user/release-keys");
+    property_override("ro.build.description", "cheetah-user 13 TQ3A.230705.001.A1 10217028 release-keys");
+    property_override("ro.build.fingerprint", "google/cheetah/cheetah:13/TQ3A.230705.001.A1/10217028:user/release-keys");
+    property_override("ro.system.build.fingerprint", "google/cheetah/cheetah:13/TQ3A.230705.001.A1/10217028:user/release-keys");
 }
