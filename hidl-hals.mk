@@ -57,7 +57,10 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9.vendor \
     vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor \
     android.frameworks.displayservice@1.0 \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.composer@2.1-service \
