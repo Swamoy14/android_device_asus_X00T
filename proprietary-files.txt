@@ -938,7 +938,7 @@ vendor/lib64/liblocationservice.so|95278b496b162ac8352c5ae407388f35b3b36aef
 vendor/lib64/liblocationservice_glue.so|95f05d44ea815d85e8f0e024dd8e7b045813d488
 vendor/lib64/liblowi_client.so|4cd9c849a5f781e1c2c5da7a5eb88d766847b203
 vendor/lib64/liblowi_wifihal.so|41da421546ce0db553029c206bfbdabd670f9190
-vendor/lib64/libminksocket.so|4a67f3a5f25fbe0419b1dc7379b75196236aecd3
+vendor/lib64/libminksocket.so|95b69993dd6cc1700a9e1feb09cadc0997342d89
 vendor/lib64/libqcc_file_agent.so|3707206276c3f8a37d0ab6ee7b2360b5bffe2b3e
 vendor/lib64/libxtadapter.so|44bbd8cd9b6f429e22d0e36b4c96727163eaa317
 vendor/lib64/vendor.qti.gnss@1.0.so|5cc0d0c8e7a8083f5892eb303ab1e6d4c9d66639
@@ -1049,9 +1049,6 @@ vendor/lib/libgcs.so|136b036d645ce31c3265cf2aed00c472ecec37e4
 vendor/lib/liblistensoundmodel2.so|375948b769905112429ae4fb2979be0b1e363950
 vendor/lib/libsmwrapper.so|0fbf611c9a597f7c70bfd2363dfc7f465d1dafd5
 
-# NFC
-vendor/lib/libpn553_fw.so
-
 # Media-basic - from S62Pro RKQ1.210406.002
 lib/libFileMux.so|22005fb1595b2b76e199b82ff3790c1bc3d54a20
 lib/libOmxMux.so|66ccc804301bccfbd17afb39a60131dd1a3fa9bc
@@ -1079,6 +1076,9 @@ vendor/lib/libOmxQcelp13Dec.so|ee6ede27923f04f4bb03b101bbf302e4df782945
 vendor/lib/libOmxVideoDSMode.so|84c632ef31c4dd88c5e08f92ba02e3f29df09b35
 vendor/lib/libOmxWmaDec.so|7fe5458ba5e19cd4c8422e910acbe6a6f6574c94
 vendor/lib64/libmmosal.so|595faff0767dc2bd0a344a98ab65a239bed14826
+
+# NFC
+vendor/lib/libpn553_fw.so
 
 # Perf - from S62Pro RKQ1.210406.002
 system_ext/bin/perfservice|356e01334f4e1c526ac18f02568e688663288367
@@ -1158,6 +1158,14 @@ vendor/lib64/libqmi_encdec.so|a18bb21e5b9b53e3dc8dc45f6e7e65e32a467607
 vendor/lib64/libqmi_legacy.so|f324c6701ecf78ff50975c0bc7f99aea09cb3539
 vendor/lib64/libqmiservices.so|52770edf3e35f5376f3d0a131636f3213c9e59fa
 vendor/lib64/libqmi.so|d12727e7d99cc15fa13f20453b04916fd3908e22
+
+# QSEEcom Hal - from S62Pro RKQ1.210406.002
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|d3d6ed383483747f8bec574adcac1c24ef1ac3a4
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
+vendor/lib/vendor.qti.hardware.qseecom@1.0.so|11517c93d45920f8e2f67e3696574b6099711142
+vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so|6b3246eaacad1ef332e3deb1c980265ddf263a57
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|1b4c92c07ed5ba3f053e10a11f2bc1232ad45375
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|c76c8b6856cd1800fd170c85f38474ce4d2ac095
 
 # Radio - from S62Pro RKQ1.210406.002
 system_ext/app/DeviceInfo/DeviceInfo.apk|1115ff685be64dfb3f4752911f7389ac7b676724
@@ -1332,14 +1340,6 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|94c1552fd129d24f454843d5174fcbd4524
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|bd0db76d555c51971dcfcce62d981f987af32811
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|a5f9d28f7adbfbf349e6f5bc210c651c78ed776e
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
-
-# QSEEcom Hal - from S62Pro RKQ1.210406.002
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|d3d6ed383483747f8bec574adcac1c24ef1ac3a4
-vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
-vendor/lib/vendor.qti.hardware.qseecom@1.0.so|11517c93d45920f8e2f67e3696574b6099711142
-vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so|6b3246eaacad1ef332e3deb1c980265ddf263a57
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|1b4c92c07ed5ba3f053e10a11f2bc1232ad45375
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|c76c8b6856cd1800fd170c85f38474ce4d2ac095
 
 # Sensors
 vendor/bin/sensors.qti
