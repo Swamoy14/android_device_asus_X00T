@@ -100,16 +100,6 @@ on boot
     chown system system /sys/kernel/touchpanel/gesture_node
     chmod 0664 /sys/kernel/touchpanel/gesture_node
 
-on property:sys.nvram.btmac=*
-    start vendor-btmac-sh
-    restart vendor.bluetooth-1-0-qti
-
-service vendor-btmac-sh  /vendor/bin/init.btmac.sh
-    class core
-    user root
-    oneshot
-    disabled
-
 service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-service
     override
     interface android.hardware.sensors@1.0::ISensors default
