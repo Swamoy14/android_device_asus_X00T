@@ -1159,14 +1159,6 @@ vendor/lib64/libqmi_legacy.so|f324c6701ecf78ff50975c0bc7f99aea09cb3539
 vendor/lib64/libqmiservices.so|52770edf3e35f5376f3d0a131636f3213c9e59fa
 vendor/lib64/libqmi.so|d12727e7d99cc15fa13f20453b04916fd3908e22
 
-# QSEEcom Hal - from S62Pro RKQ1.210406.002
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|d3d6ed383483747f8bec574adcac1c24ef1ac3a4
-vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
-vendor/lib/vendor.qti.hardware.qseecom@1.0.so|11517c93d45920f8e2f67e3696574b6099711142
-vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so|6b3246eaacad1ef332e3deb1c980265ddf263a57
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|1b4c92c07ed5ba3f053e10a11f2bc1232ad45375
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|c76c8b6856cd1800fd170c85f38474ce4d2ac095
-
 # Radio - from S62Pro RKQ1.210406.002
 system_ext/app/DeviceInfo/DeviceInfo.apk|1115ff685be64dfb3f4752911f7389ac7b676724
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|b277bd20934f3133d29dfbfb0edbcf8162b05bd5
