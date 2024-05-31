@@ -994,6 +994,7 @@ vendor/etc/default-permissions/com.qualcomm.qti.cne.xml|c63c37d067e3009735fbc54d
 vendor/etc/init/cnd.rc|3a5183df3479500fb729493bc56c71166fc10bce
 vendor/etc/init/mutualex.rc|d6d6673e59abfdb53232d502842285bae8f323f1
 vendor/lib64/libcne.so|6aa3739fd1f672f1bb23b8de32a3e7bf0371fd73
+vendor/lib64/libcacertclient.so|69ae73b9be13507ff39398ac5813ad709b8b7c32
 vendor/lib64/libcneapiclient.so|b0187b64da57348584c643040e6acd59ca9c88a8
 vendor/lib64/libcneoplookup.so|6e6566b8e6c069ea8d1d5cf868deab568ce2c95b
 vendor/lib64/libcneqmiutils.so|695eb5621cdd3c38397fe28bc07d3b68423095b0
