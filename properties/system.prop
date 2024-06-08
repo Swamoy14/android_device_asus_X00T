@@ -70,6 +70,10 @@ vendor.vidc.enc.disable.pq=true
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
+# Perf
+pm.sleep_mode=1
+vendor.post_boot.parsed=1s
+
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
