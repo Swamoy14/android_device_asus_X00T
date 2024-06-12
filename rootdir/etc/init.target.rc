@@ -476,3 +476,7 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
 # to hide Magisk & co.
 on property:sys.boot_completed=1
     chmod 440 /proc/net/unix
+    
+on property:vendor.post_boot.parsed=1
+    # Disable process_reclaim
+    write /sys/module/process_reclaim/parameters/enable_process_reclaim 0
