@@ -796,6 +796,10 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|851db5940d5e9e4330e16221be114ae
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|000e0d2ac4450c0ad8baca06985bc9065e119f1e
 vendor/lib64/vendor.qti.latency@2.0.so|60ab3143325e855f8c72e3f603c28efe2e7227b9
 
+# Connection Security - from S62Pro RKQ1.210406.002
+vendor/bin/ssgqmigd|5769f2aef8fdf48f55b01e3d7d3d1aecb860d7e1
+vendor/lib64/libminksocket.so|95b69993dd6cc1700a9e1feb09cadc0997342d89
+
 # DPM - from S62Pro RKQ1.210406.002
 system/framework/tcmclient.jar|cdd1ea7143a5a7acc3909b5cfa706650179647c7
 system_ext/bin/dpmd|4662a11c5331919cc08d541a298444ffce18cc1b
@@ -931,7 +935,6 @@ vendor/lib64/liblocationservice.so|95278b496b162ac8352c5ae407388f35b3b36aef
 vendor/lib64/liblocationservice_glue.so|95f05d44ea815d85e8f0e024dd8e7b045813d488
 vendor/lib64/liblowi_client.so|4cd9c849a5f781e1c2c5da7a5eb88d766847b203
 vendor/lib64/liblowi_wifihal.so|41da421546ce0db553029c206bfbdabd670f9190
-vendor/lib64/libminksocket.so|95b69993dd6cc1700a9e1feb09cadc0997342d89
 vendor/lib64/libqcc_file_agent.so|3707206276c3f8a37d0ab6ee7b2360b5bffe2b3e
 vendor/lib64/libxtadapter.so|44bbd8cd9b6f429e22d0e36b4c96727163eaa317
 vendor/lib64/vendor.qti.gnss@1.0.so|5cc0d0c8e7a8083f5892eb303ab1e6d4c9d66639
