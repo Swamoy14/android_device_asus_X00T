@@ -1361,12 +1361,6 @@ vendor/firmware/cppf.b06
 vendor/firmware/cppf.b07
 vendor/firmware/cppf.mdt
 
-# Soter-basic - from S62Pro RKQ1.210406.002
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|a6f1c35671a2f102ff95acecc70eefa3a7ebd432
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|032e38d60840b5ac7ca21eece486ca5acab7f203
-vendor/lib64/vendor.qti.hardware.soter@1.0.so|5496f7816036ef71aec0116864032f8a6078aee7
-
 # Thermal
 vendor/bin/thermal-engine
 -vendor/lib/libthermalclient.so
