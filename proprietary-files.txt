@@ -88,7 +88,6 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so|1633c31212d1ea9338b79ebfc2476f834
 
 # Camera
 lib64/libseemore.so
-vendor/lib/libcdsprpc.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
