@@ -80,12 +80,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|ece3dafc4447e8302109851c3a
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|3097cb00777c2911cff40e323ce3c921923722d8
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|cfc982fd153084781f540bcc4a31b6b05a9ced19
 
-# CACert - from S62Pro RKQ1.210406.002
-vendor/lib64/libcacertclient.so|69ae73b9be13507ff39398ac5813ad709b8b7c32
--vendor/app/CACertService/CACertService.apk|08036cf609286ab2626ed89e3a7f976b96ce7fa3
-vendor/lib/vendor.qti.hardware.cacert@1.0.so|f8ee69d9ab2ae41ab9ad1eea68699aed00997620
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so|1633c31212d1ea9338b79ebfc2476f83424f36ee
-
 # Camera
 lib64/libseemore.so
 vendor/lib/libdepthmapwrapper.so
